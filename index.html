@@ -132,6 +132,13 @@
         <article class="news-card pinned">
           <span class="news-date">Oct 2026</span>
           <div class="news-body">
+            Our paper <a href="https://arxiv.org/abs/2610.23053">“Unifying Embodied Foundation Models via a Model-to-Policy Formulation”</a> is on arXiv. It provides a unified formulation for embodied AI paradigms, including vision-language-action models (VLAs) and world-action models (WAMs).
+          </div>
+        </article>
+
+        <article class="news-card pinned">
+          <span class="news-date">Oct 2026</span>
+          <div class="news-body">
             Just a quick update: our work on HYSET was featured in <strong>Andrew Ng</strong>’s The Batch newsletter under <a href="https://www.deeplearning.ai/the-batch/issue-374#pick-the-right-tools-for-the-right-job">“Pick the Right Tools for the Right Job”</a>! Really happy to see our research shared with a wider audience, and grateful to Andrew and the DeepLearning.AI team for the thoughtful coverage.
           </div>
         </article>
@@ -189,11 +196,30 @@
       <div class="pub-filters" role="group" aria-label="Filter publications by topic">
         <button class="pub-filter active" type="button" data-filter="all" aria-pressed="true">All</button>
         <button class="pub-filter" type="button" data-filter="foundation" aria-pressed="false">Foundation Models</button>
-        <button class="pub-filter" type="button" data-filter="genai" aria-pressed="false">Generative AI</button>
-        <button class="pub-filter" type="button" data-filter="multimodal" aria-pressed="false">Multimodal Learning</button>
-        <button class="pub-filter" type="button" data-filter="agent" aria-pressed="false">AI Agent</button>
+        <button class="pub-filter" type="button" data-filter="genai" aria-pressed="false">Generative Models</button>
+        <button class="pub-filter" type="button" data-filter="embodied" aria-pressed="false">Embodied AI</button>
+        <button class="pub-filter" type="button" data-filter="agent" aria-pressed="false">LLM Agent</button>
         <button class="pub-filter" type="button" data-filter="statml" aria-pressed="false">Statistical Machine Learning</button>
       </div>
+
+      <article class="pub-item" data-tags="all foundation embodied statml">
+        <a class="pub-thumb pub-thumb--paper" href="https://arxiv.org/abs/2610.23053" rel="noopener">
+          <img src="assets/img/pub/model-to-policy.png" alt="First page of Unifying Embodied Foundation Models via a Model-to-Policy Formulation" width="1162" height="1492" loading="lazy">
+        </a>
+        <div class="pub-details">
+          <div class="pub-title">Unifying Embodied Foundation Models via a Model-to-Policy Formulation</div>
+          <div class="pub-authors"><span class="me">Xinyi Hong</span>, Mingyang Ren<sup>*</sup></div>
+          <div class="pub-venue pub-venue--stacked">
+            arXiv preprint, 2026
+            <a class="pub-badge" href="https://arxiv.org/abs/2610.23053" rel="noopener">arXiv:2610.23053</a>
+          </div>
+          <div class="pub-links">
+            <a class="pub-btn" href="https://arxiv.org/abs/2610.23053" rel="noopener">arXiv</a>
+            <a class="pub-btn" href="https://arxiv.org/pdf/2610.23053" rel="noopener">PDF</a>
+            <button class="pub-btn citation-btn" type="button" data-paper="model_to_policy">BibTeX</button>
+          </div>
+        </div>
+      </article>
 
       <article class="pub-item" data-tags="all agent statml">
         <a class="pub-thumb" href="https://arxiv.org/abs/2607.25718" rel="noopener">
@@ -381,6 +407,15 @@
 
 <script>
 window.CITATIONS = {
+  model_to_policy: `@misc{hong2026unifyingembodiedfoundationmodels,
+      title={Unifying Embodied Foundation Models via a Model-to-Policy Formulation},
+      author={Xinyi Hong and Mingyang Ren},
+      year={2026},
+      eprint={2610.23053},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2610.23053},
+}`,
   hyset: `@article{hong2026hyset,
   title   = {Tools Are Not Islands: Set-Level Tool Retrieval for LLM Agents
              via Query-Conditioned Hyperedge Prediction},

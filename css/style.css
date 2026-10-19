@@ -407,6 +407,7 @@ strong { color: var(--ink); font-weight: 600; }
 }
 .pub-thumb:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
 .pub-thumb img { display: block; width: 100%; height: auto; }
+.pub-thumb--paper img { height: 119px; object-fit: cover; object-position: center top; }
 
 .pub-details { flex: 1; min-width: 0; }
 
@@ -901,6 +902,7 @@ body.fp-locked { overflow: hidden; }
 }
 
 .pub-badge:hover { text-decoration: none; border-color: var(--accent); }
+.pub-venue--stacked .pub-badge { display: block; width: fit-content; margin: 5px 0 0; }
 
 .pub-links { display: flex; flex-wrap: wrap; gap: 12px; }
 
