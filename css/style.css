@@ -902,7 +902,7 @@ body.fp-locked { overflow: hidden; }
 }
 
 .pub-badge:hover { text-decoration: none; border-color: var(--accent); }
-.pub-venue--stacked .pub-badge { display: block; width: fit-content; margin: 5px 0 0; }
+.pub-venue--badge-only .pub-badge { margin-left: 0; }
 
 .pub-links { display: flex; flex-wrap: wrap; gap: 12px; }
 
